@@ -1,0 +1,14 @@
+.darkmode{
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+.darkmode_label{
+    margin-right: 1rem;
+}
+/* .darkmode_input{
+
+}
+.darkmode_span{
+
+} */
