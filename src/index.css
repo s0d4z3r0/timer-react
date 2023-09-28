@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Mooli&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Mooli&display=swap");
 
-:root{
+:root {
   --primary-color: 153, 153, 153;
   --secondary-color: 232, 232, 232;
   --tertiary-color: 240, 240, 240;
   --black-color: 0, 0, 0;
   --white-color: 255, 255, 255;
-  
-  --font-primary: 'Mooli', sans-serif;;
-  --font-secondary: 'Dosis', sans-serif;
+
+  --font-primary: "Mooli", sans-serif;
+  --font-secondary: "Dosis", sans-serif;
 }
 
-.dark_theme{
+.dark_theme {
   --primary-color: 58, 58, 58;
   --secondary-color: 102, 102, 102;
   --tertiary-color: 15, 15, 15;
