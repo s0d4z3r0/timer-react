@@ -1,4 +1,5 @@
 import styles from "./Timer.module.css";
+import PropTypes from 'prop-types'
 
 const Timer = ({
   fiveMinutes,
@@ -53,5 +54,18 @@ const Timer = ({
     </div>
   );
 };
+
+Timer.propTypes = {
+  fiveMinutes: PropTypes.func.isRequired,
+  fifteenMinutes: PropTypes.func.isRequired,
+  thirtyMinutes: PropTypes.func.isRequired,
+  setStartPause: PropTypes.func.isRequired,
+  startPause: PropTypes.func.isRequired,
+  time: PropTypes.func.isRequired,
+  prevTime: PropTypes.func.isRequired,
+  display: PropTypes.func.isRequired,
+  handleReset: PropTypes.func.isRequired,
+  handleWork: PropTypes.func.isRequired,
+}
 
 export default Timer;

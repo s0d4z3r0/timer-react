@@ -19,9 +19,9 @@ function App() {
   // State para True === Start ou False === Pause
   const [startPause, setStartPause] = useState(false);
   // Times enviados em segundos
-  const [fiveMinutes, setFiveMinutes] = useState(300);
-  const [fifteenMinutes, setFifteenMinutes] = useState(900);
-  const [thirtyMinutes, seThirtytMinutes] = useState(1800);
+  const fiveMinutes = 300;
+  const fifteenMinutes = 900;
+  const thirtyMinutes = 1800;
   // Time selecionado anteriormente
   const [prevTime, setPrevTime] = useState(300);
 

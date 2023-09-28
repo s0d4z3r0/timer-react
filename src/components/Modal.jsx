@@ -1,4 +1,5 @@
 import styles from "./Modal.module.css";
+import PropTypes from 'prop-types'
 
 const Modal = ({ setModalFinish }) => {
   // Fecha o modal caso o usuário clique no elemento com className 'close' ou 'modal_bg'
@@ -24,5 +25,9 @@ const Modal = ({ setModalFinish }) => {
     </div>
   );
 };
+
+Modal.propTypes = {
+  setModalFinish: PropTypes.func.isRequired
+}
 
 export default Modal;
