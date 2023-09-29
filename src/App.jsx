@@ -2,8 +2,22 @@ import { useCallback, useEffect, useState } from "react";
 import DarkMode from "./components/DarkMode";
 import Timer from "./components/Timer";
 import Modal from "./components/Modal";
+import Footer from "./components/Footer";
 
 function App() {
+  // Dark and light mode
+  const [theme, setTheme] = useState(true);
+  const [darkOrLightMode, setDarkOrLightMode] = useState("light");
+
+  useEffect(() => {
+    if (theme === false) {
+      setDarkOrLightMode("dark");
+    } else {
+      setDarkOrLightMode("light");
+    }
+  }, [theme, setDarkOrLightMode]);
+
+  document.body.setAttribute("className", darkOrLightMode);
   // Abrir modal
   const [modalFinish, setModalFinish] = useState(false);
   // Time em segundos
@@ -77,7 +91,7 @@ function App() {
   return (
     <div className="timer">
       {modalFinish ? <Modal setModalFinish={setModalFinish} /> : ""}
-      <DarkMode />
+      <DarkMode setTheme={setTheme} />
       <Timer
         setModalFinish={setModalFinish}
         setTime={setTime}
@@ -94,6 +108,7 @@ function App() {
         handleReset={handleReset}
         handleWork={handleWork}
       />
+      <Footer />
     </div>
   );
 }

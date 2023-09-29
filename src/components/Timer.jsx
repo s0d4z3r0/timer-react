@@ -1,5 +1,5 @@
 import styles from "./Timer.module.css";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Timer = ({
   fiveMinutes,
@@ -13,7 +13,6 @@ const Timer = ({
   handleReset,
   handleWork,
 }) => {
-
   return (
     <div className={styles.timer}>
       <div className={styles.timer_content}>
@@ -30,7 +29,10 @@ const Timer = ({
         </h3>
         {time > 0 ? (
           <div className={styles.buttonsStartPauseReset}>
-            <button className={styles.startStop} onClick={() => setStartPause(!startPause)}>
+            <button
+              className={styles.startStop}
+              onClick={() => setStartPause(!startPause)}
+            >
               {startPause ? "PAUSE" : "START"}
             </button>
             <button
@@ -56,16 +58,16 @@ const Timer = ({
 };
 
 Timer.propTypes = {
-  fiveMinutes: PropTypes.func.isRequired,
-  fifteenMinutes: PropTypes.func.isRequired,
-  thirtyMinutes: PropTypes.func.isRequired,
+  fiveMinutes: PropTypes.number.isRequired,
+  fifteenMinutes: PropTypes.number.isRequired,
+  thirtyMinutes: PropTypes.number.isRequired,
   setStartPause: PropTypes.func.isRequired,
-  startPause: PropTypes.func.isRequired,
-  time: PropTypes.func.isRequired,
-  prevTime: PropTypes.func.isRequired,
-  display: PropTypes.func.isRequired,
+  startPause: PropTypes.bool.isRequired,
+  time: PropTypes.number.isRequired,
+  prevTime: PropTypes.number.isRequired,
+  display: PropTypes.string.isRequired,
   handleReset: PropTypes.func.isRequired,
   handleWork: PropTypes.func.isRequired,
-}
+};
 
 export default Timer;

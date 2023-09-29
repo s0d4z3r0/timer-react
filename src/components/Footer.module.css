@@ -1,0 +1,26 @@
+.footer {
+  background-color: rgb(var(--default-color));
+  height: 1.5rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgb(var(--default-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  filter: invert(1);
+  font-size: 0.9rem;
+  font-family: var(--font-primary);
+}
+.footer p span a {
+  filter: invert(1);
+  text-decoration: none;
+  font-weight: bold;
+  color: #56854c !important;
+}
+.footer p span a:hover {
+  color: #345c2b !important;
+}
