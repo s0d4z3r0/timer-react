@@ -2,7 +2,7 @@
   border-radius: 55px;
   border: 1px solid rgb(var(--tertiary-color));
   width: 14rem;
-  height: 16rem;
+  height: 12rem;
   margin: 0 auto;
   background: rgb(var(--primary-color));
   background: linear-gradient(
@@ -22,31 +22,31 @@
   border: 1px solid rgb(var(--primary-color));
   border-radius: 50px;
   width: 13.2rem;
-  height: 15.2rem;
-  margin: 0 auto;
+  height: 11.2rem;
   background: rgb(var(--primary-color));
   background: linear-gradient(
     135deg,
     rgba(var(--primary-color), 1) 40%,
     rgba(var(--secondary-color), 1) 100%
   );
+  border: 1px solid red;
 }
 .timer_content h3.title {
   font-family: var(--font-primary);
   color: rgb(var(--white-color));
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-shadow: -2px 2px 2px rgba(var(--black-color), 0.2);
   transition: 200ms ease-in-out;
 }
 .work {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   width: 80%;
   display: flex;
   justify-content: space-around;
 }
 .work button {
   font-family: var(--font-primary);
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
   background-color: transparent;
   border: none;
@@ -61,14 +61,14 @@
 }
 .work span {
   font-family: var(--font-primary);
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(var(--white-color));
   text-shadow: -2px 2px 2px rgba(var(--black-color), 0.2);
 }
 .timer_content h3.timerDisplay {
   font-family: var(--font-secondary);
   color: rgb(var(--white-color));
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
   text-shadow: -4px 4px 5px rgba(var(--black-color), 0.2);
   width: 100%;
@@ -80,16 +80,15 @@
   display: flex;
   flex-direction: column;
   width: 10rem;
-  height: 5rem;
   justify-content: center;
   align-items: center;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 .timer button.startStop,
 .timer button.reset,
 .timer button.resetOnOperation {
   font-family: var(--font-primary);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   background-color: transparent;
   border: none;
@@ -100,7 +99,7 @@
   width: fit-content;
 }
 .timer button.resetOnOperation {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-shadow: none;
   color: rgba(255, 0, 0, 0.6) !important;
 }
@@ -118,14 +117,53 @@
   color: rgba(255, 0, 0, 0.6) !important;
 }
 
-
+@media (min-width: 320px) and (min-height: 320px) {
+  .timer {
+    border-radius: 55px;
+    width: 14rem;
+    height: 16rem;
+  }
+  .timer_content {
+    border-radius: 50px;
+    width: 13.2rem;
+    height: 15.2rem;
+  }
+  .timer_content h3.title {
+    font-size: 1rem;
+  }
+  .work {
+    margin: 0.5rem 0;
+    width: 80%;
+  }
+  .work button {
+    font-size: 0.8rem;
+  }
+  .work span {
+    font-size: 1rem;
+  }
+  .timer_content h3.timerDisplay {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .buttonsStartPauseReset {
+    width: 10rem;
+    height: 5rem;
+  }
+  .timer button.startStop,
+  .timer button.reset,
+  .timer button.resetOnOperation {
+    font-size: 2rem;
+  }
+  .timer button.resetOnOperation {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 320px) and (min-height: 500px) {
   .timer {
     border-radius: 75px;
     width: 18rem;
     height: 27rem;
     margin: 0 auto;
-    padding: 0.5rem;
   }
   .timer_content {
     border-radius: 70px;
@@ -179,7 +217,7 @@
     font-size: 3.5rem;
   }
   .work {
-    margin: 5rem 0 .5rem;
+    margin: 5rem 0 0.5rem;
     width: 85%;
   }
   .work button {
@@ -190,7 +228,7 @@
   }
   .timer_content h3.timerDisplay {
     font-size: 10rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   .buttonsStartPauseReset {
     width: 100%;

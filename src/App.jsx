@@ -19,7 +19,7 @@ function App() {
 
   document.body.setAttribute("className", darkOrLightMode);
   // Abrir modal
-  const [modalFinish, setModalFinish] = useState(true);
+  const [modalFinish, setModalFinish] = useState(false);
   // Time em segundos
   const [time, setTime] = useState(300);
   // Formato do display
