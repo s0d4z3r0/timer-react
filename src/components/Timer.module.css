@@ -99,18 +99,12 @@
 }
 .timer button.resetOnOperation {
   font-size: 0.8rem;
-  text-shadow: none;
-  color: rgba(255, 0, 0, 0.6) !important;
 }
 .timer button.startStop:hover,
 .timer button.reset:hover,
 .timer button.resetOnOperation:hover {
   color: rgba(var(--white-color), 1);
   text-shadow: -2px 2px 5px rgba(var(--black-color), 0.5);
-}
-.timer button.resetOnOperation:hover {
-  text-shadow: none;
-  color: rgba(167, 2, 2, 0.9) !important;
 }
 .end {
   color: rgba(255, 0, 0, 0.6) !important;
