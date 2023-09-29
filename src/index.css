@@ -26,8 +26,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  /* border: 1px solid red; */
+  height: 100%;
+}
 body {
+  /* border: 1px solid red; */
+  height: 100%;
   overflow-y: auto;
   scroll-behavior: smooth;
   background-color: rgb(var(--default-color));
@@ -44,6 +49,10 @@ body::-webkit-scrollbar-thumb {
 .timer {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
 }
 
 button,
