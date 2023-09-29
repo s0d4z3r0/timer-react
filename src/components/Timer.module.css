@@ -29,7 +29,6 @@
     rgba(var(--primary-color), 1) 40%,
     rgba(var(--secondary-color), 1) 100%
   );
-  border: 1px solid red;
 }
 .timer_content h3.title {
   font-family: var(--font-primary);
